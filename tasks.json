@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile Java (with JDBC)",
+      "type": "shell",
+      "command": "javac -cp ".;lib\\*" *.java",
+      "group": "build",
+      "presentation": { "reveal": "always" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run HostLinkGUI (with JDBC)",
+      "type": "shell",
+      "command": "java -cp ".;lib\\*" HostLinkGUI",
+      "group": "none",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    }
+  ]
+}
